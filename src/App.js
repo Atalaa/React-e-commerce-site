@@ -1,5 +1,3 @@
-// import React from 'react';
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import FloatingCart from "./Components/FloatingCart/FloatingCart";
@@ -9,7 +7,7 @@ import ProductShowcase from "./Pages/ProductShowcase/ProductShowcase";
 import Contact from "./Pages/Contact/Contact";
 import ShoppingCart from "./Pages/ShopppingCart/ShoppingCart";
 
-const App = () => {
+export default function App() {
   return (
     <Router>
       <Navbar />
@@ -23,6 +21,4 @@ const App = () => {
       </Routes>
     </Router>
   );
-};
-
-export default App;
+}
